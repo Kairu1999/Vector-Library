@@ -12,17 +12,20 @@ struct ThreeDimVector{
     int num3;
 };
 
+/*Calculate the 2 dimensional dot product*/
 int TwoDimDotProduct(struct TwoDimVector vector1, struct TwoDimVector vector2){
     int dotproduct = (vector1.num1 * vector2.num1) + (vector1.num2 * vector2.num2);
     return dotproduct;
 }
 
+/*Calculate the 3 dimensional dot product*/
 int ThreeDimDotProduct(struct ThreeDimVector vector1, struct ThreeDimVector vector2){
     int dotproduct = (vector1.num1 * vector2.num1) + (vector1.num2 * vector2.num2) + (vector1.num3 * vector2.num3);
     return dotproduct;
 }
 
 
+/*Calculate the three dimensional cross product*/
 struct ThreeDimVector crossProduct(struct ThreeDimVector vector1, struct ThreeDimVector vector2){
     struct ThreeDimVector vector3;
     int newval1 = (vector1.num2 * vector2.num3) - (vector1.num3 * vector2.num2);
@@ -35,6 +38,8 @@ struct ThreeDimVector crossProduct(struct ThreeDimVector vector1, struct ThreeDi
     
     return vector3;
 }
+
+
 int main()
 {
     int x1 = 1, y1 = 2, x2 = 3,y2 = 4, z1 = 5, z2 = 6;
