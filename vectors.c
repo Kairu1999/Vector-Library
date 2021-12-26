@@ -16,7 +16,7 @@ struct ThreeDimVector{
     int num3;
 };
 
-/*Struct for a 2D matrix)
+/*Struct for a 2D matrix*/
 struct TwoDimMatrix{
     struct TwoDimVector e1;
     struct TwoDimVector e2;
